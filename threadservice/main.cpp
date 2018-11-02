@@ -21,6 +21,7 @@ std::pair<std::string, int> postHandler(std::string msg) {
     //writeFile(json.at(U("type")).as_string());
     std::string type = json.at(U("type")).as_string();
     if (type == "getPosts") {
+
         int threadId = json.at(U("threadId")).as_integer();
         std::string q = "SELECT * FROM posts WHERE ThreadId="+std::to_string(threadId);
         //writeFile(q);

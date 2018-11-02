@@ -41,6 +41,15 @@ std::function<void (std::string, std::function<std::pair<std::string, int> (std:
     return [this](std::string name, std::function<std::pair<std::string, int> (std::string)> handler) {
         this->mImpl->mLogic.registerHandler(name,handler);
     };
+
+
+
+
+
+
+
+
+
 }
 
 std::function<std::string (std::string, std::string)> microservice::MicroService::getExecCallback()
@@ -57,7 +66,7 @@ int microservice::MicroService::mainLoop()
     //Start the microservice
     try {
         mImpl->mNetwork.start().wait();
-        std::cout << "============================================================================\n"
+        std::cout << "==================================tee==========================================\n"
                   << mImpl->mNetworkSettings["service_name"] << " microservice just started.\n"
                   << "Listening for requests at: " << mImpl->mNetwork.getEndpoint() << '\n'
                   << "============================================================================\n";

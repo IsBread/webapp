@@ -1,1 +1,0 @@
-/usr/bin/g++  -std=c++11   CMakeFiles/gameservice.dir/src/main.cpp.o  -o gameservice -Wl,-rpath,/home/zee123/webapp/build/microservice/base_unit ../microservice/base_unit/libbase.so 

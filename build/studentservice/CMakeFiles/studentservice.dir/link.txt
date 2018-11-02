@@ -1,1 +1,0 @@
-/usr/bin/g++  -std=c++11   CMakeFiles/studentservice.dir/main.cpp.o  -o studentservice -Wl,-rpath,/home/zee123/webapp/build/microservice/base_unit ../microservice/base_unit/libbase.so 
